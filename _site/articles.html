@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>学術論文 – Computational Clinical Psychology Lab</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-c885d0439d4f681619fe7797a0e929e0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-660e3ac6d27488d94d6c7244fdccdb79.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-c885d0439d4f681619fe7797a0e929e0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/favicon.ico" alt="" class="navbar-logo light-content">
+    <img src="./images/favicon.ico" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Computational Clinical Psychology Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./education.html"> 
+<span class="menu-text">Education</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Publications</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-publications">    
+        <li>
+    <a class="dropdown-item" href="./books.html">
+ <span class="dropdown-text">書籍</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./articles.html">
+ <span class="dropdown-text">学術論文</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./articles-jp.html">
+ <span class="dropdown-text">学術論文(日本語)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./bulletins.html">
+ <span class="dropdown-text">紀要論文他</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./presentations.html">
+ <span class="dropdown-text">国際会議発表</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./presentations-jp.html">
+ <span class="dropdown-text">国内学会・研究会発表</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./members.html"> 
+<span class="menu-text">Members</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./portal.html"> 
+<span class="menu-text">Lab Portal</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./news.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://coclipsy-lab.github.io/en/"> 
+<span class="menu-text">EN</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/CoCliPsy-Lab"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/KunisatoY"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+   
+  <ul>
+  <li><a href="#in-press" id="toc-in-press" class="nav-link active" data-scroll-target="#in-press">in press</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2025</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2024</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2023</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2022</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2021</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2020</a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2019</a></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2018</a></li>
+  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">2017</a></li>
+  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9">2016</a></li>
+  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10">2015</a></li>
+  <li><a href="#section-11" id="toc-section-11" class="nav-link" data-scroll-target="#section-11">2014</a></li>
+  <li><a href="#section-12" id="toc-section-12" class="nav-link" data-scroll-target="#section-12">2013</a></li>
+  <li><a href="#section-13" id="toc-section-13" class="nav-link" data-scroll-target="#section-13">2012</a></li>
+  <li><a href="#section-14" id="toc-section-14" class="nav-link" data-scroll-target="#section-14">2011</a></li>
+  <li><a href="#section-15" id="toc-section-15" class="nav-link" data-scroll-target="#section-15">2010</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">学術論文</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="in-press" class="level3">
+<h3 class="anchored" data-anchor-id="in-press">in press</h3>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section">2025</h3>
+<ul>
+<li><p>[54] Matsumoto, K., Hamatani, S., Mizuno, Y., Maeno, A., Kasai, M., Watanabe, K., Kamashita, R., Sunami, N., Ikeda, M., Nagata, S., Inoue, M., Kimura, Y., Yokoo, M., Kunisato, Y., Akasaki, Y., Nakamura, M.(2025). Self-Help cognitive behavioral therapy for gaze anxiety in young adults: Protocol of a 3-arms, multicenter, randomized controlled Trial. Psychiatry and Clinical Neurosciences Reports.2025;0:e70236. <a href="https://doi.org/10.1002/pcn5.70236">Link</a></p></li>
+<li><p>[53] Buchanan, E. M.,…Kunisato, Y.,…Lewis, S.C. (2025). Measuring the semantic priming effect across many languages. Nature Human Behaviour, 10, 182–201. <a href="https://doi.org/10.1038/s41562-025-02254-x">Link</a></p></li>
+<li><p>[52] Kowal, M.,…Kunisato, Y.,…Prazeres, F. (2025). Cross-cultural data on romantic love and mate preferences from 117,293 participants across 175 countries. Scientific Data, 12, 1103. <a href="https://doi.org/10.1038/s41597-025-05365-2">Link</a></p></li>
+<li><p>[51] Soda, T., Toyama, A., Takeda, M., Kunisato, Y., &amp; Yamashita, Y. (2025). Reliability and Validity of the DSM-5 Level 1 Cross-Cutting Symptom Measure in Japan: Insights into General and Specific Psychiatric Symptom Assessment. Journal of Personality Assessment, 1–13. <a href="https://doi.org/10.1080/00223891.2025.2527702">Link</a></p></li>
+<li><p>[50] Pfuhl, G.,…Kunisato, Y., …Piotr Sorokowski, P.(2025). A preliminary study on the role of personal history of infectious and parasitic diseases on self-reported health across countries. Public Health, 242, 220–227. <a href="https://doi.org/10.1016/j.puhe.2025.02.030">Link</a></p></li>
+<li><p>[49] Omizu, T. and Kunisato. Y.(2025). Exploring Effective Intervention Strategies for Depression as a Complex System: Targeted Interventions through Network Simulations. Japanese Psychological Research, 67(2), 147-161. <a href="https://doi.org/10.1111/jpr.12553">Link</a> <a href="https://osf.io/ta782/">Code</a></p></li>
+<li><p>[48] Kashihara, J., Sugawara, D., Kunisato, Y., Takebayashi, Y., Nakajima, S., Ito, M.(2025). Possible Futures for the Psychological Network Approach: Agenda for Clinical Scientists. Japanese Psychological Research, 67(2), 132-146. <a href="https://doi.org/10.1111/jpr.12538">Link</a></p></li>
+</ul>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1">2024</h3>
+<ul>
+<li><p>[47] Matsumoto, K., Hamatani, S., Kunisato, Y., Mizuno, Y. (2024). Components of cognitive–behavioural therapy for mitigating core symptoms in attention-deficit hyperactivity disorder: a systematic review and network meta-analys. BMJ Ment Health, 27(1),e301303. <a href="https://mentalhealth.bmj.com/content/27/1/e301303">Link</a></p></li>
+<li><p>[46] Ishizu, K.,Ohtsuki, T., Shimoda, Y., Kunisato, Y.(2024). ACT in school settings: A pilot study of ACT-based universal group psycho-educational program among Japanese early adolescents. Journal of Contextual Behavioral Science, 34, 100851. <a href="https://doi.org/10.1016/j.jcbs.2024.100851">Link</a>[Link](</p></li>
+</ul>
+</section>
+<section id="section-2" class="level3">
+<h3 class="anchored" data-anchor-id="section-2">2023</h3>
+<ul>
+<li><p>[45] Toyama, A., Katahira, K., Kunisato, Y. (2023). Examinations of Biases by Model Misspecification and Parameter Reliability of Reinforcement Learning Models. Computational Brain &amp; Behavior, 6, 651–670. DOI: https://doi.org/10.1007/s42113-023-00175-4</p></li>
+<li><p>[44] Hamatani, S., Matsumoto, K., Kunisato, Y., Okawa, S., Yamashita, M., Mizuno, Y. (2023). Dismantling cognitive-behavioral therapy components for attention-deficit hyperactivity disorder in adolescents and adults: protocol for a network meta-analysis. BMJ Open, 13(4):e068547. DOI: http://dx.doi.org/10.1136/bmjopen-2022-068547</p></li>
+<li><p>[43] Buchanan, E. M., … Kunisato, Y., … Primbs, M. (2023). The Psychological Science Accelerator’s COVID-19 rapid-response dataset. Scientific Data, 10, 87. DOI: https://doi.org/10.1038/s41597-022-01811-7</p></li>
+</ul>
+</section>
+<section id="section-3" class="level3">
+<h3 class="anchored" data-anchor-id="section-3">2022</h3>
+<ul>
+<li><p>[42] Kowal, M.,… Kunisato, Y., …Zumárraga-Espinosa, M.(2022) Predictors of Enhancing Human Physical Attractiveness: Data from 93 Countries. Evolution and Human Behavior, 43(6), 455-474. <a href="https://www.sciencedirect.com/science/article/pii/S1090513822000472">Link</a></p></li>
+<li><p>[41] Dorison, C.A., Lerner, J.S., Heller, B.H… Kunisato, Y.,… Nicholas A. Coles (2022). In COVID-19 Health Messaging, Loss Framing Increases Anxiety with Little-to-No Concomitant Benefits: Experimental Evidence from 84 Countries. Affective Science, 3(3), 577-602. <a href="https://doi.org/10.1007/s42761-022-00128-3">link</a></p></li>
+<li><p>[40] Hasegawa, A., Oura, S., Yamamoto, T., Kunisato, Y., Fukui, Y.(2022) Preliminary validation of the self-report measure assessing experiences of negative independent and dependent event frequency in japanese university students. Journal of Rational-Emotive &amp; Cognitive-Behavior Therapy. <a href="https://doi.org/10.1007/s10942-022-00469-9">Link</a></p></li>
+<li><p>[39] Psychological Science Accelerator Self-Determination Theory Collaboration (2022). A global experiment on motivating social distancing during the COVID-19 pandemic. Proceedings of the National Academy of Sciences, 119(22), e2111091119. <a href="https://doi.org/10.1073/pnas.2111091119">Link</a></p></li>
+<li><p>[38] Somatori, K. &amp; Kunisato, Y. (2022) Metacognitive Ability and the Precision of Confidence. Frontiers in Human Neuroscience, section Cognitive Neuroscience，16, 10.3389/fnhum.2022.706538 <a href="https://www.frontiersin.org/articles/10.3389/fnhum.2022.706538/abstract">Link</a></p></li>
+<li><p>[37] Hasegawa, A., Oura, S., Yamamoto, T., Kunisato, Y., Matsuda, Y., &amp; Adachi, M. (2022) Causes and consequences of stress generation: Longitudinal associations of negative events, aggressive behaviors, rumination, and depressive symptoms. Current Psychology.<a href="https://doi.org/10.1007/s12144-022-02859-9">link</a></p></li>
+</ul>
+</section>
+<section id="section-4" class="level3">
+<h3 class="anchored" data-anchor-id="section-4">2021</h3>
+<ul>
+<li><p>[36] Hasegawa, A., Somatori, K., Nishimura, H., Hattori, Y., &amp; Kunisato, Y. (2021). Depression, rumination, and impulsive action: A latent variable approach to behavioral impulsivity. The Journal of Psychology, 155(8), 717-737. <a href="https://doi.org/10.1080/00223980.2021.1956871">link</a></p></li>
+<li><p>[35] Kashihara, J., Takebayashi, Y., Kunisato, Y., &amp; Ito, M. (2021) Classifying patients with depressive and anxiety disorders according to symptom network structures: A Gaussian graphical mixture model-based clustering. PLoS ONE 16(9): e0256902. <a href="https://doi.org/10.1371/journal.pone.0256902">Link</a></p></li>
+<li><p>[34] Wang K., Goldenberg A., Dorison, C.A., Miller, J.K., Uusberg, A., Lerner, J.S., Gross, J.J., Agesin, B.B., Bernardo, M., Campos, O., Eudave, L., Grzech, K., Ozery, D.H., Jackson, E.A., Luis Garcia, E.O., Drexler, S.M., Jurković, A.P., Rana, K., Wilson, J.P., … Kunisato, Y.,…Moshontz, H. (in press) A multi-country test of brief reappraisal interventions on emotions during the COVID-19 pandemic. Nature Human Behavior, 5, 1089–1110.<a href="https://doi.org/10.1038/s41562-021-01173-x">Link</a></p></li>
+<li><p>[33] Shimono, Y., Hasegawa, A., Tsuchihara, K., Tanaka, K., Matsuda, Y., &amp; Kunisato, Y.(2021) Longitudinal association between autistic traits and affinity for hikikomori in Japanese university students. Current Psychology, 41, 8842–8849. <a href="https://doi.org/10.1007/s12144-020-01287-x">Link</a></p></li>
+<li><p>[32] van Doorn, J., van den Bergh, D., Dablander, F., van Dongen, N., Derks, K., Evans, N., Gronau, Q., Haaf, J., Kunisato, Y., Ly, A., Marsman, M., Sarafoglou, A., Stefan, A., &amp; Wagenmakers, EJ.(2021) Strong public claims may not reflect researchers’ private convictions. Significance, 18(1), 44-45.<a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/1740-9713.01493">Link</a> <a href="https://psyarxiv.com/pc4ad/">Pre Print</a></p></li>
+</ul>
+</section>
+<section id="section-5" class="level3">
+<h3 class="anchored" data-anchor-id="section-5">2020</h3>
+<ul>
+<li><p>[31] Kato, A., Kunisato, Y., Katahira, K., Okimura, T., &amp; Yamashita, Y. (2020) Computational Psychiatry Research Map (CPSYMAP): a New Database for Visualizing Research Papers. Frontiers in Psychiatry, 11, 1360.<a href="https://www.frontiersin.org/articles/10.3389/fpsyt.2020.578706/full">Link</a></p></li>
+<li><p>[30] Katahira, K., Kunisato, Y., Okimura, T., &amp; Yamashita, Y. (2020) Retrospective surprise: A computational component for active inference. Journal of Mathematical Psychology, 96, 102347. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0022249620300286?dgcid=author">Link</a></p></li>
+<li><p>[29] Katahira, K., Kunisato, Y., Yamashita, Y., &amp; Suzuki, S. (2020) Commentary: “A robust data-driven approach identifies four personality types across four large data sets”. Frontiers in Big Data, 3(8). <a href="https://www.frontiersin.org/articles/10.3389/fdata.2020.00008/full">Link</a></p></li>
+</ul>
+</section>
+<section id="section-6" class="level3">
+<h3 class="anchored" data-anchor-id="section-6">2019</h3>
+<ul>
+<li><p>[28] Nishiguchi, Y., Sakamoto, J., Kunisato, Y., &amp; Takano, K. (2019) Linear Ballistic Accumulator Modeling of Attentional Bias Modification Revealed Disturbed Evidence Accumulation of Negative Information by Explicit Instruction. Frontiers in Psychology,10, 2447. <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02447/full">Link</a></p></li>
+<li><p>[27] Yokomitsu, K., Sakai, T., Irie, T., Tayama, J., Furukawa, H., Himachi, M., Kanazawa, J., Koda, M., Kunisato, Y., Matsuoka, H., Takada, T., Takahashi, F., Takahashi, T., &amp; Osawa, K. (2019). Gambling symptoms, behaviors, and cognitive distortions in Japanese university students. Substance Abuse Treatment, Prevention, and Policy, 14, 51. <a href="https://substanceabusepolicy.biomedcentral.com/articles/10.1186/s13011-019-0230-5">Link</a></p></li>
+<li><p>[26] Hasegawa, A., Somatori, K., Nishimura, H., Hattori, Y., &amp; Kunisato, Y. (2019). Associations between self-reported impulsivity and a latent variable of impulsive action constructed from three laboratory tasks. Journal of Experimental Psychopathology, 10, 3. <a href="https://journals.sagepub.com/doi/full/10.1177/2043808719861894">Link</a></p></li>
+</ul>
+</section>
+<section id="section-7" class="level3">
+<h3 class="anchored" data-anchor-id="section-7">2018</h3>
+<ul>
+<li><p>[25] Hasegawa, A., Kunisato, Y., Morimoto, H., Nishimura, H., &amp; Matsuda, Y. (2018). Depressive rumination and urgency have mutually enhancing relationships but both predict unique variance in future depression: A longitudinal study. Cogent Psychology, 5: 1450919.ß <a href="https://www.tandfonline.com/doi/full/10.1080/23311908.2018.1450919">Link</a></p></li>
+<li><p>[24] Hasegawa, A., Kunisato, Y., Morimoto, H., Nishimura, H., &amp; Matsuda, Y. (2018). How do rumination and social problem solving intensify depression? A longitudinal study. Journal of Rational-Emotive &amp; Cognitive-Behavior Therapy, 36, 1, 28-46. <a href="https://link.springer.com/article/10.1007/s10942-017-0272-4">Link</a></p></li>
+<li><p>[23] Takagaki, K., Okamoto, Y., Jinnin, R., Mori, A., Nishiyama, Y., Yamamura, T., Yokoyama, S., Shiota, S., Okamoto, Y., Miyake, Y., Ogata, A., Kunisato, Y., Shimoda, H., Kawakami, N., Furukawa, T. A., &amp; Yamawaki. (2018). Enduring effects of a five-week behavioral activation program for subthreshold depression among late adolescents: an exploratory randomized controlled trial. Neuropsychiatric Disease and Treatment , 14, 2633-2641. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6186299/">Link</a></p></li>
+</ul>
+</section>
+<section id="section-8" class="level3">
+<h3 class="anchored" data-anchor-id="section-8">2017</h3>
+<ul>
+<li><p>[22] Moriguchi, Y., Noda, T., Nakayashiki, K., Takata, Y., Setoyama, S., Kawasaki, S., Kunisato, Y., Mishima, K., Nakagome, K., Hanakawa, T. (2017). Validation of brain-derived signals in near-infrared spectroscopy through multivoxel analysis of concurrent functional magnetic resonance imaging. Human Brain Mapping, 38(10), 5274–5291. <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.23734">Link</a></p></li>
+<li><p>[21] Yoshimura, S., Okamoto, Y., Matsunaga, M., Onoda, K., Okada, G., Kunisato, Y., Yoshino, A., Ueda, K., Suzuki, S., &amp; Yamawaki, S. (2017). Cognitive behavioral therapy changes functional connectivity between medial prefrontal and anterior cingulate cortices, Journal of Affective Disorders, 15(208), 610-614. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165032716305195">Link</a></p></li>
+</ul>
+</section>
+<section id="section-9" class="level3">
+<h3 class="anchored" data-anchor-id="section-9">2016</h3>
+<ul>
+<li><p>[20] Takagaki, K., Okamoto, Y., Jinnin, R., Mori, A., Nishiyama, Y., Yamamura, T., Yokoyama, S., Shiota, S., Okamoto, Y., Miyake, Y., Ogata, A., Kunisato, Y., Shimoda, H., Kawakami, N., Furukawa, A. T., &amp; Yamawaki. (2016). Behavioral activation for late adolescents with subthreshold depression: a randomized controlled trial. European Child &amp; Adolescent Psychiatry, 25(11), 1171-1182. <a href="https://link.springer.com/article/10.1007/s00787-016-0842-5">Link</a></p></li>
+<li><p>[19] Hasegawa, A., Nishimura, H., Matsuda, Y., Kunisato, Y., Morimoto, H., &amp; Adachi, M. (2016). Is trait rumination associated with the ability to generate effective problem solving strategies? Utilizing two versions of the Means-Ends Problem-Solving Test. Journal of Rational-Emotive &amp; Cognitive-Behavior Therapy, 34, 14-30. <a href="https://pubmed.ncbi.nlm.nih.gov/26900257/">Link</a></p></li>
+</ul>
+</section>
+<section id="section-10" class="level3">
+<h3 class="anchored" data-anchor-id="section-10">2015</h3>
+<ul>
+<li><p>[18] Tsukue, R., Okamoto, Y., Yoshino, A., Kunisato, Y., Takagaki, K., Takebayashi, Y., Tanaka, K., Konuma, K., Tsukue, I., &amp; Yamawaki, S. (2015) Do Individuals with Alcohol Dependence Show Higher Unfairness Sensitivity? The Relationship Between Impulsivity and Unfairness Sensitivity in Alcohol-Dependent Adults. Alcoholism, clinical and experimental research, 39(10), 2016-2021. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/acer.12832">Link</a></p></li>
+<li><p>[17] Nishiyama,Y., Okamoto, Y., Kunisato, Y., Okada, G., Yoshimura, S., Kanai, Y., Yamamura, T., Yoshino, A., Jinnin, R., Takagaki, K., Onoda, K., &amp; Yamawaki, S. (2015) fMRI Study of Social Anxiety during Social Ostracism with and without Emotional Support. PLoS ONE 10(5): e0127426. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127426">Link</a></p></li>
+</ul>
+</section>
+<section id="section-11" class="level3">
+<h3 class="anchored" data-anchor-id="section-11">2014</h3>
+<ul>
+<li><p>[16] Machino, A., Kunisato, Y., Matsumoto, T., Yoshimura, S., Ueda, K., Yamawaki, Y., Okada, G., Okamoto, Y., &amp; Yamawaki, S (2014) Possible involvement of rumination in gray matter abnormalities in persistent symptoms of major depression: an exploratory magnetic resonance imaging voxel-based morphometry study, Journal of Affective Disorders, 168, 229-235. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165032714003917?via%3Dihub">Link</a></p></li>
+<li><p>[15] Yoshino, A., Okamoto, Y., Kunisato, Y., Yoshimura, Y., Jinnin, R., Hayashi, Y., Kobayakawa, M., Doi, M., Oshita, K., Nakamura, R., Tanaka, K., Yamashita, H., Kawamoto, M., &amp; Yamawaki, S. (2014). Distinctive spontaneous regional neural activity in patients with somatoform pain disorder: A resting-state fMRI preliminary study, Psychiatry Research: Neuroimaging, 221(3), 246-248. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0925492713003417?via%3Dihub">Link</a></p></li>
+<li><p>[14] Toki, S., Okamoto, Y., Onoda, K., Matsumoto, T., Yoshimura, S., Kunisato, Y., Okada, G., Shishida, K., Kobayakawa, M., Fukumoto, T., Machino, A., Inagaki, M., Yamawaki, S. (2014). Hippocampal activation during associative encoding of word pairs and its relation to symptomatic improvement in depression: A functional and volumetric MRI study. Journal of Affective Disorder, 152, 462-467. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165032713005892?via%3Dihub">Link</a></p></li>
+</ul>
+</section>
+<section id="section-12" class="level3">
+<h3 class="anchored" data-anchor-id="section-12">2013</h3>
+<ul>
+<li><p>[13] Yoshimura, S., Okamoto, Y., Onoda, K., Matsunaga, M., Okada, G., Kunisato, Y., Yoshino, A., Ueda, K., Suzuki, S., &amp; Yamawaki, S. (2013). Cognitive behavioral therapy for depression changes medial prefrontal and ventral anterior cingulate cortex activity associated with self-referential processing. Social Cognitive and Affective Neuroscience, 9(4), 487-493. <a href="https://academic.oup.com/scan/article/9/4/487/1629777">Link</a></p></li>
+<li><p>[12] Takagaki, K., Okajima, I., Kunisato, Y., Nakajima, S., Kanai, Y., Ishikawa, S., &amp; Sakano, Y. (2013). Preliminary assessment of the behavioral activation model in Japanese undergraduate students. Psychological Reports, 112(1), 47-59. <a href="https://journals.sagepub.com/doi/abs/10.2466/02.15.21.PR0.112.1.47-59">Link</a></p></li>
+<li><p>[11] Koseki, S., Noda., T., Yokoyama, S., Kunisato, Y., Ito, D., Suyama, H., Matsuda, T., Sugimura, Y., Ishihara, N., Shimizu, Y., Nakazawa, K., Yoshida, S., Arima, K., Suzuki,S. (2013). The relationship between positive and negative automatic thought and activity in the prefrontal and temporal cortices: A multi-channel near-infrared spectroscopy (NIRS) study, Journal of Affective Disorders, 151(1), 352-359. <a href="https://www.sciencedirect.com/science/article/pii/S0165032713004461">Link</a></p></li>
+</ul>
+</section>
+<section id="section-13" class="level3">
+<h3 class="anchored" data-anchor-id="section-13">2012</h3>
+<ul>
+<li><p>[10] Kinoshita, A., Okamoto, Y., Okada, G., Demoto, Y., Kunisato, Y., Yoshimura, S., Onoda,K., Kamachi, M., Yamawaki, S. (2012) Sex differences in neural activation to ambiguous facial expression in happy and sad context, Perceptual and Motor Skills, 115(2), 349-359. <a href="https://journals.sagepub.com/doi/abs/10.2466/22.24.PMS.115.5.349-359">Link</a></p></li>
+<li><p>[9] Kunisato, Y., Okamoto, Y., Ueda, K., Onoda, K., Okada, G., Yoshimura, S., Suzuki, S., Samejima, K., Yamawaki, S. (2012) Effects of depression on reward based decision making and variability of action in probabilistic learning, Journal of Behavior Therapy and Experimental Psychiatry, 43, 1088-1094. <a href="https://www.sciencedirect.com/science/article/abs/pii/S000579161200047X?via%3Dihub">Link</a></p></li>
+<li><p>[8] Yoshino, A., Okamoto, Y., Onoda, K., Shishida, K., Yoshimura, S., Kunisato, Y., Demoto, Y., Okada, G., Toki, S., Yamashita, H., Yamawaki, S. (2012) Sadness enhances the experience of pain and affects pain-evoked cortical activities: An MEG study, The Journal of Pain,13, 628-635. <a href="Sadness enhances the experience of pain and affects pain-evoked cortical activities: An MEG study">Link</a></p></li>
+<li><p>[7] Demoto, Y., Okada, G., Okamoto, Y., Kunisato, Y., Aoyama, S., Onoda, K., Munakata, A., Nomura, M., Tanaka, S. C., Schweighofer, N., Doya, K., Yamawaki, S. (2012) Neural And Personality Correlates of Individual Differences Related to the Effects of Acute Tryptophan Depletion on Future Reward Evaluation, Neuropsychobiology, 65, 55-64. <a href="https://www.karger.com/Article/Abstract/328990">Link</a></p></li>
+</ul>
+</section>
+<section id="section-14" class="level3">
+<h3 class="anchored" data-anchor-id="section-14">2011</h3>
+<ul>
+<li><p>[6] Okada, G., Okamoto, Y., Kunisato, Y., Aoyama, S., Nishiyama, Y., Yoshimura, S., Onoda, K., Toki, S., Yamashita, H., &amp; Yamawaki, S. (2011) The effect of negative and positive emotionality on associative memory: An fMRI study, PLoS ONE, 6(9),e24862. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0024862">Link</a></p></li>
+<li><p>[5] Onoda, K., Okamoto, Y., Kunisato, Y., Aoyama, S., Shishida, K., Okada, G., Tanaka, SC., Schweighofer, N., Yamaguchi, S., Doya, K., &amp; Yamawaki, S. (2011) Inter-individual discount factor differences in reward prediction are topographically associated with caudate activation, Experimental Brain Research, 212(4), 593-601. <a href="https://link.springer.com/article/10.1007/s00221-011-2771-3">Link</a></p></li>
+<li><p>[4] Kunisato, Y., Okamoto, Y., Okada, G., Aoyama, S., Nishiyama, Y., Onoda, K., Yamawaki, S. (2011)Personality traits and the amplitude of spontaneous low-frequency oscillations during resting state, Neuroscience Letters, 492(2), 109-113. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0304394011001133">Link</a></p></li>
+<li><p>[3] Kunisato,Y., Okamoto, Y., Okada, G., Aoyama, S., Demoto, Y., Munakata, A., Nomura, M., Onoda, K., Yamawaki, S. (2011) Modulation of default - mode network activity by acute tryptophan depletion is associated with mood change：A resting state functional magnetic resonance imaging study. Neuroscience Research, 69, 129-134. <a href="https://www.sciencedirect.com/science/article/pii/S016801021002835X?via%3Dihub">Link</a></p></li>
+</ul>
+</section>
+<section id="section-15" class="level3">
+<h3 class="anchored" data-anchor-id="section-15">2010</h3>
+<ul>
+<li><p>[2] Matsunaga, M., Okamoto, Y., Suzuki, S., Kinoshita, A., Yoshimura, S., Yoshino, A., Kunisato, Y. &amp; Yamawaki, S. (2010). Psychosocial functioning in patients with treatment-resistant depression after group cognitive behavioral therapy. Bmc Psychiatry, 10(1), 22. <a href="https://bmcpsychiatry.biomedcentral.com/articles/10.1186/1471-244X-10-22">Link</a></p></li>
+<li><p>[1] Yoshino, A., Okamoto, Y., Onoda, K., Yoshimura, S., Kunisato, Y., Demoto, Y., Okada, G, &amp; Shigeto, Y. (2010). Sadness enhances the experience of pain via neural activation in the anterior cingulate cortex and amygdala: An fMRI study. Neuroimage, 50(3), 1194-1201. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1053811909012658">Link</a></p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 CoCliPsy-Lab</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Computational Clinical Psychology Lab</p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://forms.gle/2xjkn98rzqiPsq1Y6">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

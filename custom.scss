@@ -1,0 +1,46 @@
+/*-- scss:defaults --*/
+$primary: #007bff; // 知的な青
+$secondary: #6c757d;
+$navbar-bg: rgba(255, 255, 255, 0.8); // 透過させて今っぽく
+
+/*-- scss:rules --*/
+.navbar {
+  backdrop-filter: blur(10px); // ガラス質のエフェクト
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.quarto-title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(45deg, #007bff, #00d4ff); // 見出しをグラデーションに
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 全般的なナビゲーションリンクの色 */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+.cv-table table {
+  border-collapse: collapse;
+  width: 100%;
+  border: none; /* 外枠を消す */
+}
+
+.cv-table th {
+  display: none; /* 見出し行を隠す */
+}
+
+.cv-table td {
+  border: none !important; /* セルの線を消す */
+  padding: 5px 10px;
+  vertical-align: top;
+}
+
+/* 1列目（年月）の幅を固定し、少し薄い色にする */
+.cv-table td:first-child {
+  width: 180px;
+  color: #666;
+  font-variant-numeric: tabular-nums; /* 数字の幅を揃える */
+}

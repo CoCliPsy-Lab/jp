@@ -1,0 +1,64 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Computational Clinical Psychology Lab"
+  favicon: images/favicon.ico
+  navbar:
+    logo: images/favicon.ico
+    background: primary
+    search: true
+    sticky: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: education.qmd
+        text: Education
+      - text: Publications
+        menu:
+          - href: books.qmd
+            text: "書籍"
+          - href: articles.qmd
+            text: "学術論文"
+          - href: articles-jp.qmd
+            text: "学術論文(日本語)"
+          - href: bulletins.qmd
+            text: "紀要論文他"
+          - href: presentations.qmd
+            text: "国際会議発表"
+          - href: presentations-jp.qmd
+            text: "国内学会・研究会発表"
+      - href: members.qmd
+        text: Members
+      - href: portal.qmd
+        text: Lab Portal
+      - href: news.qmd
+        text: News
+      - href: "https://coclipsy-lab.github.io/en/"
+        text: EN\JP
+    right:
+      - icon: github
+        href: https://github.com/CoCliPsy-Lab
+      - icon: twitter
+        href: https://x.com/KunisatoY
+  page-footer:
+    left: "© 2026 CoCliPsy-Lab"
+    center: "Computational Clinical Psychology Lab"
+    right: 
+      - icon: envelope
+        href: https://forms.gle/2xjkn98rzqiPsq1Y6
+
+format:
+  html:
+    theme:
+      light: [flatly, custom.scss]
+      dark: [solar, custom.scss]
+    css: styles.css
+    toc: true
+    toc-title: " "
+    code-fold: true
+    mainfont: "Inter, system-ui, -apple-system, sans-serif"
+    smooth-scroll: true

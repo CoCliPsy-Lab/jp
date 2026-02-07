@@ -1,1 +1,1 @@
-# jp
+# CoCliPsy-Labウェブサイトのリポジトリ
