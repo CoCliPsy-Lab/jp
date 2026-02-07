@@ -12,12 +12,12 @@ website:
     sticky: true
     left:
       - href: index.qmd
-        text: Home
+        text: "ホーム"
       - href: research.qmd
-        text: Research
+        text: "研究テーマ"
       - href: education.qmd
-        text: Education
-      - text: Publications
+        text: "教育"
+      - text: "研究業績"
         menu:
           - href: books.qmd
             text: "書籍"
@@ -32,13 +32,13 @@ website:
           - href: presentations-jp.qmd
             text: "国内学会・研究会発表"
       - href: members.qmd
-        text: Members
+        text: "メンバー"
       - href: portal.qmd
-        text: Lab Portal
+        text: "研究室内向け"
       - href: news.qmd
-        text: News
+        text: "ニュース"
       - href: "https://coclipsy-lab.github.io/en/"
-        text: EN\JP
+        text: "英語サイト"
     right:
       - icon: github
         href: https://github.com/CoCliPsy-Lab
