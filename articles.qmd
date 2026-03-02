@@ -43,7 +43,7 @@ title: "学術論文"
 
 - [42] Kowal, M.,... Kunisato, Y., ...Zumárraga-Espinosa, M.(2022) Predictors of Enhancing Human Physical Attractiveness: Data from 93 Countries. Evolution and Human Behavior, 43(6), 455-474. [Link](https://www.sciencedirect.com/science/article/pii/S1090513822000472)
 
-- [41] Dorison, C.A., Lerner, J.S., Heller, B.H... Kunisato, Y.,... Nicholas A. Coles (2022). In COVID-19 Health Messaging, Loss Framing Increases Anxiety with Little-to-No Concomitant Benefits: Experimental Evidence from 84 Countries. Affective Science, 3(3), 577-602.  [link](https://doi.org/10.1007/s42761-022-00128-3)
+- [41] Dorison, C.A., ... Kunisato, Y.,... Nicholas A. Coles (2022). In COVID-19 Health Messaging, Loss Framing Increases Anxiety with Little-to-No Concomitant Benefits: Experimental Evidence from 84 Countries. Affective Science, 3(3), 577-602.  [link](https://doi.org/10.1007/s42761-022-00128-3)
 
 - [40] Hasegawa, A., Oura, S., Yamamoto, T., Kunisato, Y., Fukui, Y.(2022) Preliminary validation of the self-report measure assessing experiences of negative independent and dependent event frequency in japanese university students. Journal of Rational-Emotive & Cognitive-Behavior Therapy. [Link](https://doi.org/10.1007/s10942-022-00469-9)
 
@@ -59,7 +59,7 @@ title: "学術論文"
 
 - [35] Kashihara, J., Takebayashi, Y., Kunisato, Y., & Ito, M. (2021) Classifying patients with depressive and anxiety disorders according to symptom network structures: A Gaussian graphical mixture model-based clustering. PLoS ONE 16(9): e0256902. [Link](https://doi.org/10.1371/journal.pone.0256902)
 
-- [34] Wang K., Goldenberg A., Dorison, C.A., Miller, J.K., Uusberg, A., Lerner, J.S., Gross, J.J., Agesin, B.B., Bernardo, M., Campos, O., Eudave, L., Grzech, K., Ozery, D.H., Jackson, E.A., Luis Garcia, E.O., Drexler, S.M., Jurković, A.P., Rana, K., Wilson, J.P., ... Kunisato, Y.,...Moshontz, H. (in press) A multi-country test of brief reappraisal interventions on emotions during the COVID-19 pandemic. Nature Human Behavior, 5, 1089–1110.[Link](https://doi.org/10.1038/s41562-021-01173-x)
+- [34] Wang K., ... Kunisato, Y.,...Moshontz, H. (2021) A multi-country test of brief reappraisal interventions on emotions during the COVID-19 pandemic. Nature Human Behavior, 5, 1089–1110.[Link](https://doi.org/10.1038/s41562-021-01173-x)
 
 - [33] Shimono, Y., Hasegawa, A., Tsuchihara, K., Tanaka, K., Matsuda, Y., & Kunisato, Y.(2021) Longitudinal association between autistic traits and affinity for hikikomori in Japanese university students. Current Psychology, 41, 8842–8849. [Link](https://doi.org/10.1007/s12144-020-01287-x)
 
