@@ -5,7 +5,9 @@ title: "学術論文"
 
 ### in press
 
-- [55] Toyama, A., Kunisato, Y., Yamashita, Y., & Suzuki, S. (in press) Cognitive Behavioral Assessment Toolbox (CBAT): An Open-Source Platform Supporting Experiments in Computational Psychiatry. Psychiatry and Clinical Neurosciences.[Link](https://onlinelibrary.wiley.com/doi/10.1111/pcn.70045)
+### 2026
+
+- [55] Toyama, A., Kunisato, Y., Yamashita, Y., & Suzuki, S. (2026) Cognitive Behavioral Assessment Toolbox (CBAT): An Open-Source Platform Supporting Experiments in Computational Psychiatry. Psychiatry and Clinical Neurosciences.[Link](https://onlinelibrary.wiley.com/doi/10.1111/pcn.70045)
 
 ### 2025
 
