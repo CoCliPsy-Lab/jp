@@ -7,6 +7,8 @@ title: "学術論文"
 
 ### 2026
 
+- [56] Aczel, B., ..., Kunisato, Y., ..., Nosek, B. A. (2026). Investigating the analytical robustness of the social and behavioural sciences. Nature, 652, 135-142. [Link](https://doi.org/10.1038/s41586-025-09844-9)
+
 - [55] Toyama, A., Kunisato, Y., Yamashita, Y., & Suzuki, S. (2026) Cognitive Behavioral Assessment Toolbox (CBAT): An Open-Source Platform Supporting Experiments in Computational Psychiatry. Psychiatry and Clinical Neurosciences.[Link](https://onlinelibrary.wiley.com/doi/10.1111/pcn.70045)
 
 ### 2025
