@@ -5,7 +5,7 @@ title: "学術論文"
 
 ### in press
 
-- [57] Soda, T., Murata, S., Toyama, A., Suzuki, S., Kunisato, Y., Katahira, K., & Yamashita, Y. (2024, August 16). Psychometric Properties of Hierarchical Psychiatric Symptoms on the General Population. [Preprint](https://osf.io/preprints/psyarxiv/84nua_v1)
+- [57] Soda, T., Murata, S., Toyama, A., Suzuki, S., Kunisato, Y., Katahira, K., & Yamashita, Y. (in press). Psychometric Properties of Hierarchical Psychiatric Symptoms on the General Population. PLOS Mental Health
 
 ### 2026
 
