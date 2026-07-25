@@ -1,6 +1,14 @@
 ---
 title: "国際会議発表"
 ---
+### 2026
+
+- [48] Kato, M., Omizu, T., & Kunisato, Y. (2026). Intervention Simulations for Insomnia Using Bridge
+Centrality in Networks. International Meeting of the Psychometric Society 2026, July 21st, Seoul.
+
+
+- [47] Omizu, T., & Kunisato, Y. (2026). Estimating Inverse Temperature in Individual Networks Using
+Dynamic Ising Models. International Meeting of the Psychometric Society 2026, July 21st, Seoul.
 
 ### 2025
 
