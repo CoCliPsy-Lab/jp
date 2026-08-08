@@ -2,7 +2,13 @@
 title: "計算論的臨床心理学研究室へようこそ"
 ---
 
-<img src="images/logo.jpg" width="300px">
+::: {.home-hero aria-label="研究室ロゴとマスコット"}
+![](images/logo.jpg){.lab-logo alt="CoCliPsy-Lab のロゴ"}
+
+::: {.mascot-stage aria-label="研究室のマスコットが歩いています"}
+![](images/lab-mascot.png){.lab-mascot alt="歩く脳のマスコット"}
+:::
+:::
 
 計算論的臨床心理学研究室では，うつや不安のメカニズムに関する基礎研究，認知行動療法の作用メカニズムに関する研究、オープンサイエンスに関する研究を行っています。
 
@@ -30,4 +36,3 @@ height="1000"
 frameborder="0" 
 marginheight="0" 
 marginwidth="0">Loading…</iframe>
-
