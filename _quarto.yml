@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - images/lab-mascot-*.png
 
 website:
   title: "Computational Clinical Psychology Lab"
@@ -53,6 +55,7 @@ website:
 
 format:
   html:
+    include-after-body: mascot.html
     theme:
       light: [flatly, custom.scss]
       dark: [solar, custom.scss]
