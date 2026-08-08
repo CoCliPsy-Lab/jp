@@ -42,9 +42,10 @@
 }
 
 .lab-mascot {
-  animation: mascot-walk 12s ease-in-out infinite;
+  animation: mascot-walk 7s ease-in-out infinite;
   bottom: 0.9rem;
   height: 185px;
+  left: 0;
   max-width: none;
   position: absolute;
   transform-origin: center bottom;
@@ -57,12 +58,12 @@
 }
 
 @keyframes mascot-walk {
-  0%, 100% { transform: translateX(8px) translateY(0) scaleX(1) rotate(-2deg); }
-  12% { transform: translateX(16%) translateY(-7px) scaleX(1) rotate(2deg); }
-  42% { transform: translateX(calc(100% + 52px)) translateY(0) scaleX(1) rotate(-2deg); }
-  50% { transform: translateX(calc(100% + 52px)) translateY(-4px) scaleX(-1) rotate(2deg); }
-  58% { transform: translateX(calc(100% + 36px)) translateY(0) scaleX(-1) rotate(-2deg); }
-  88% { transform: translateX(16%) translateY(-7px) scaleX(-1) rotate(2deg); }
+  0%, 100% { left: 0; transform: translateY(0) scaleX(1) rotate(-2deg); }
+  12% { transform: translateY(-7px) scaleX(1) rotate(2deg); }
+  42% { left: calc(100% - 185px); transform: translateY(0) scaleX(1) rotate(-2deg); }
+  50% { left: calc(100% - 185px); transform: translateY(-4px) scaleX(-1) rotate(2deg); }
+  58% { transform: translateY(0) scaleX(-1) rotate(-2deg); }
+  88% { transform: translateY(-7px) scaleX(-1) rotate(2deg); }
 }
 
 @media (max-width: 700px) {
