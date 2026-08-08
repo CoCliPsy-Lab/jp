@@ -76,10 +76,3 @@
     width: 100%;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .lab-mascot {
-    animation: none;
-    left: calc(50% - 92px);
-  }
-}
