@@ -2,6 +2,10 @@
 title: "研究室内向けのポータルサイト"
 ---
 
+::: {.mascot-stage .page-mascot-stage aria-label="ノートPCを持つ研究室マスコット"}
+![](images/lab-mascot-laptop.png){.lab-mascot alt="ノートPCを持って歩く脳のマスコット"}
+:::
+
 研究室で使えるリソース（ゼミ用Notion、Github、解析用サーバー、新着論文DB、再現可能性・計算論モデリング・心理ネットワーク関係のリソースと動画、研究室での細かなTipsなど）へのリンクが以下にまとまっています。
 
 - [CoCliPsy-Lab](https://github.com/CoCliPsy-Lab/CoCliPsy-Lab)

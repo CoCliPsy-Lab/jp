@@ -2,6 +2,10 @@
 title: "国里愛彦 (YOSHIHIKO KUNISATO, Ph.D.)"
 ---
 
+::: {.mascot-stage .page-mascot-stage aria-label="研究中の研究室マスコット"}
+![](images/lab-mascot-research.png){.lab-mascot alt="研究データを持って歩く脳のマスコット"}
+:::
+
 ::: {.grid}
 
 ::: {.g-col-4}

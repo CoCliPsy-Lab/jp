@@ -2,6 +2,10 @@
 title: "書籍"
 ---
 
+::: {.mascot-stage .page-mascot-stage aria-label="読書中の研究室マスコット"}
+![](images/lab-mascot-book.png){.lab-mascot alt="読書しながら歩く脳のマスコット"}
+:::
+
 ### 2026
 
 - [40] 国里愛彦・清水裕士・武藤拓之(2026). 『これからの心理学研究法: 世界とつながる実証アプローチ』　有斐閣　2026年6月24日[Amazon.co.jp](https://amzn.to/4wkYyep)

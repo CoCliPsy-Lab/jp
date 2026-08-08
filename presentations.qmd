@@ -1,6 +1,11 @@
 ---
 title: "国際会議発表"
 ---
+
+::: {.mascot-stage .page-mascot-stage aria-label="読書中の研究室マスコット"}
+![](images/lab-mascot-book.png){.lab-mascot alt="読書しながら歩く脳のマスコット"}
+:::
+
 ### 2026
 
 - [48] Kato, M., Omizu, T., & Kunisato, Y. (2026). Intervention Simulations for Insomnia Using Bridge

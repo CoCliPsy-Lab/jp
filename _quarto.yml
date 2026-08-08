@@ -55,7 +55,6 @@ website:
 
 format:
   html:
-    include-after-body: mascot.html
     theme:
       light: [flatly, custom.scss]
       dark: [solar, custom.scss]

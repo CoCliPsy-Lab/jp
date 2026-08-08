@@ -57,29 +57,10 @@
   animation-play-state: paused;
 }
 
-/* 各ページ右下を散歩するマスコット。本文やフォームの操作を妨げない。 */
-.site-mascot {
-  animation: site-mascot-explore 14s ease-in-out infinite;
-  bottom: 0.75rem;
-  pointer-events: none;
-  position: fixed;
-  right: 0.75rem;
-  width: clamp(78px, 10vw, 128px);
-  z-index: 1030;
-}
-
-.site-mascot img {
-  display: block;
-  height: auto;
+.page-mascot-stage {
+  margin: 0.25rem auto 1.5rem;
+  max-width: 560px;
   width: 100%;
-}
-
-@keyframes site-mascot-explore {
-  0%, 100% { transform: translate(0, 0) rotate(-2deg); }
-  20% { transform: translate(-2.5rem, -0.6rem) rotate(2deg); }
-  45% { transform: translate(-5.5rem, 0) rotate(-2deg); }
-  65% { transform: translate(-3rem, -0.8rem) rotate(2deg); }
-  82% { transform: translate(-1rem, 0) rotate(-2deg); }
 }
 
 @keyframes mascot-walk {

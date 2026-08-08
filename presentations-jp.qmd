@@ -2,6 +2,10 @@
 title: "国内学会・研究会発表"
 ---
 
+::: {.mascot-stage .page-mascot-stage aria-label="読書中の研究室マスコット"}
+![](images/lab-mascot-book.png){.lab-mascot alt="読書しながら歩く脳のマスコット"}
+:::
+
 ## 2026
 ### ポスター発表
 
