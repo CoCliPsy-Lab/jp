@@ -15,10 +15,16 @@ website:
     left:
       - href: index.qmd
         text: "ホーム"
-      - href: research.qmd
-        text: "研究テーマ"
-      - href: education.qmd
-        text: "教育"
+      - text: "研究室"
+        menu:
+          - href: research.qmd
+            text: "研究テーマ"
+          - href: education.qmd
+            text: "教育"
+          - href: members.qmd
+            text: "メンバー"
+          - href: portal.qmd
+            text: "研究室内向け"
       - text: "研究業績"
         menu:
           - href: books.qmd
@@ -33,10 +39,6 @@ website:
             text: "国際会議発表"
           - href: presentations-jp.qmd
             text: "国内学会・研究会発表"
-      - href: members.qmd
-        text: "メンバー"
-      - href: portal.qmd
-        text: "研究室内向け"
       - href: news.qmd
         text: "ニュース"
       - href: "https://coclipsy-lab.github.io/en/"
