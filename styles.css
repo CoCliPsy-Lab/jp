@@ -57,12 +57,6 @@
   animation-play-state: paused;
 }
 
-.page-mascot-stage {
-  margin: 0.25rem auto 1.5rem;
-  max-width: 560px;
-  width: 100%;
-}
-
 @keyframes mascot-walk {
   0%, 100% { left: 0; transform: translateY(0) scaleX(1) rotate(-2deg); }
   12% { transform: translateY(-7px) scaleX(1) rotate(2deg); }

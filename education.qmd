@@ -2,9 +2,7 @@
 title: "ゼミの教育目標と進学希望者への情報"
 ---
 
-::: {.mascot-stage .page-mascot-stage aria-label="読書中の研究室マスコット"}
 ![](images/lab-mascot-book.png){.lab-mascot alt="読書しながら歩く脳のマスコット"}
-:::
 
 ## 学部の教育目標
 

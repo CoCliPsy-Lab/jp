@@ -2,8 +2,6 @@
 title: "研究フィードバック"
 ---
 
-::: {.mascot-stage .page-mascot-stage aria-label="ノートPCを持つ研究室マスコット"}
 ![](images/lab-mascot-laptop.png){.lab-mascot alt="ノートPCを持って歩く脳のマスコット"}
-:::
 
 現在、研究参加者向けのフィードバック内容はありません。
