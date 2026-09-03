@@ -6,12 +6,14 @@ title: "学術論文（日本語）"
 
 ### 印刷中
 
-- [52] 江川伊織・大水拓海・国里愛彦(印刷中). 計算論的アプローチにおける不確実性下の意思決定・学習課題:スコーピングレビューによる選定指針 認知科学, 33(2),
+- [53] 江川伊織・大水拓海・国里愛彦(印刷中). 計算論的アプローチにおける不確実性下の意思決定・学習課題:スコーピングレビューによる選定指針 認知科学, 33(2),
 
 
 ### 2026
 
-- [51] 山崎 智・土屋政雄・国里愛彦(2026). Personalized Psychological Flexibility Index日本語版の開発　認知行動療法研究, 52(1), 1-13. [Link](https://www.jstage.jst.go.jp/article/jcogther/19/2/19_88/_article/-char/ja) [Link](https://www.jstage.jst.go.jp/article/jjbct/52/1/52_23-012/_article/-char/ja/)
+- [52] 山崎 智・土屋政雄・国里愛彦(2026). Personalized Psychological Flexibility Index日本語版の開発　認知行動療法研究, 52(1), 1-13. [Link](https://www.jstage.jst.go.jp/article/jjbct/52/1/52_23-012/_article/-char/ja/)
+
+- [51] 国里愛彦・重松潤・宗田卓史(2026). 認知行動療法と計算論的精神医学　認知療法研究, 19(2), 88-96. [Link](https://www.jstage.jst.go.jp/article/jcogther/19/2/19_88/_article/-char/ja)
 
 - [50]  入野晴菜・国里愛彦・竹林唯・小川祐子・菊地裕絵・鈴木伸一(2026)　拒絶過敏性はどのように主観的な拒絶体験を形成するか：排斥場面における予期・知覚・気分反応の関連　認知心理学研究, 23(2), 145-159.[Link](https://www.jstage.jst.go.jp/article/jcogpsy/23/2/23_2512/_pdf/-char/ja)
 
