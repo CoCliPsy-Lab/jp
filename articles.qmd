@@ -9,6 +9,8 @@ title: "学術論文"
 
 - [57] Soda, T., Murata, S., Toyama, A., Suzuki, S., Kunisato, Y., Katahira, K., & Yamashita, Y.(2026) Psychometric properties of hierarchical psychiatric symptoms on the general population. PLOS Ment Health 3(6): e0000633. https://doi.org/10.1371/journal.pmen.0000633
 
+- [58] Toyama, A., Kunisato, Y., Yamashita, Y., & Suzuki, S. (2026). Response to "Comment on 'Cognitive & Behavioral Assessment Toolbox (CBAT): An open-source platform supporting experiments in computational psychiatry'". Psychiatry and Clinical Neurosciences. [Link](https://onlinelibrary.wiley.com/doi/10.1111/pcn.70154)
+
 ### 2026
 
 - [56] Aczel, B., ..., Kunisato, Y., ..., Nosek, B. A. (2026). Investigating the analytical robustness of the social and behavioural sciences. Nature, 652, 135-142. [Link](https://doi.org/10.1038/s41586-025-09844-9)
