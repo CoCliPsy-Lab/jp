@@ -7,6 +7,9 @@ title: "学術論文"
 
 ### in press
 
+- [58] Matsumoto, K., Hamatani, S., Kunisato, Y., Watanabe, K., Nagata, S., Maeno, A., Yokoo, M., Kimura, Y., Sunami, N., Ikeda, M., Kasai, M., Kamashita, R., Mizuno, Y., & Nakamura, M. (2026). Unguided bibliotherapy and digital self-help interventions based on cognitive behavioural therapy for university students with gaze-related anxiety and social anxiety symptoms: a randomised controlled trial. Internet Interventions, 46(101023), 101023. https://doi.org/10.1016/j.invent.2026.101023
+
+
 - [57] Soda, T., Murata, S., Toyama, A., Suzuki, S., Kunisato, Y., Katahira, K., & Yamashita, Y.(2026) Psychometric properties of hierarchical psychiatric symptoms on the general population. PLOS Ment Health 3(6): e0000633. https://doi.org/10.1371/journal.pmen.0000633
 
 - [58] Toyama, A., Kunisato, Y., Yamashita, Y., & Suzuki, S. (2026). Response to "Comment on 'Cognitive & Behavioral Assessment Toolbox (CBAT): An open-source platform supporting experiments in computational psychiatry'". Psychiatry and Clinical Neurosciences. [Link](https://onlinelibrary.wiley.com/doi/10.1111/pcn.70154)
