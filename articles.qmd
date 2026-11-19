@@ -7,6 +7,8 @@ title: "学術論文"
 
 ### in press
 
+- [59] Omizu, T. and Kunisato. Y.(in press). Rethinking Emotional Granularity: A Dynamic Network Approach Using GVAR and Stochastic Differential Equations. Behaviormetrika.
+
 - [58] Matsumoto, K., Hamatani, S., Kunisato, Y., Watanabe, K., Nagata, S., Maeno, A., Yokoo, M., Kimura, Y., Sunami, N., Ikeda, M., Kasai, M., Kamashita, R., Mizuno, Y., & Nakamura, M. (2026). Unguided bibliotherapy and digital self-help interventions based on cognitive behavioural therapy for university students with gaze-related anxiety and social anxiety symptoms: a randomised controlled trial. Internet Interventions, 46(101023), 101023. https://doi.org/10.1016/j.invent.2026.101023
 
 
