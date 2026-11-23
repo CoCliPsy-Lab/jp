@@ -4,6 +4,9 @@ project:
   resources:
     - images/lab-mascot-*.png
 
+shortcodes:
+  - lab-year.lua
+
 website:
   title: "Computational Clinical Psychology Lab"
   favicon: images/favicon.ico
